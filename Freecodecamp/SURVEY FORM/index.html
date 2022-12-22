@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Programming Learning</h1>
+      <p id="description">
+        <i>Thank you for taking your time to see my project <3</i>
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-control">
+        <label for="name">Name</label
+        ><input type="text" id="name" placeholder="George Boole" />
+      </div>
+
+      <div class="form-control">
+        <label for="email">Email</label
+        ><input type="email" id="email" placeholder="linustorvalds@gmail.com" />
+      </div>
+
+      <div class="form-control">
+        <label for="age">Age</label
+        ><input type="number" id="age" placeholder="10" />
+      </div>
+
+      <div class="form-control">
+        <label for="select">How much do you know about programming?</label
+        ><select name="select" id="select">
+          <option value="nothing">I don't know nothing</option>
+          <option value="courses">I took some courses / tutorials</option>
+          <option value="study">
+            I studied programming in formal education
+          </option>
+          <option value="work">I already work as a programmer</option>
+        </select>
+      </div>
+
+      <div class="form-control">
+        <label>Would you like to...?</label>
+        <label for="learn-improve"><input type="radio" name="learn-improve" id="learn"/> Learn programming from zero</label>
+        <label for="learn-improve"><input type="radio" name="learn-improve" id="improve"/> Improve my programming skills</label>
+    </form>
+  </body>
+</html>

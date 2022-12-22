@@ -1,0 +1,18 @@
+<%- include('./partials/header.ejs') %> 
+  <h1>Prueba</h1>
+  <h2>
+    <%= text %> 
+  </h2>
+
+
+  <form action="/register" method="POST">
+
+    <input name="name" type="text" placeholder="name">
+    <input name="email" type="text" placeholder="email">
+    <input name="age" type="text" placeholder="age">
+
+    <input type="submit">
+
+  </form>
+</body>
+</html>

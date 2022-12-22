@@ -1,0 +1,96 @@
+/* MENU DESKTOP */
+
+.nav__responsive-ul {
+  display: none; /*Desaparece el menu responsive (.nav__responsive-ul)*/
+}
+
+.nav {
+  background-color: darkslateblue; /*Pone color de fondo al menu*/
+}
+
+.nav__li {
+  display: inline-block; /*Pone los links uno al lado del otro*/
+  padding: 1em;          /*Separa a los links con un padding*/
+  color: #fff;         /*Pone color a los íconos*/
+}
+
+.nav__li a {
+  color: #fff;         /*Pone color a los links*/
+  text-decoration: none; /*Borra todos los estilos, como el subrayado*/
+}
+
+.nav__li i {
+  text-align: right;     /*Alinea los íconos a la derecha*/
+  margin-right: .5em;    /*Le da un margen a la derecha, así todos tienen la misma separación con el texto*/
+}
+
+.nav__li:hover > a {     /*Cuando el cursor pase sobre el elemento <li> seleccionar el elemento hijo <a>*/
+  color: #bbb;          /*Cambiar el color de <a>*/
+}
+
+.nav__li:hover > i {     /*Cuando el cursor pase sobre el elemento <li> seleccionar el elemento hijo <i>*/
+  color: #bbb;          /*Cambiar el color de <i>*/
+}
+
+
+/* MENU MOBILE */
+
+@media only screen and (max-width: 450px) {     /*Cuando el ancho sea menor a 450px*/
+  .nav__ul {
+    display: none;                              /*Desaparece el menu desktop (.nav__ul)*/
+  }
+
+  /*BOTON DE BARRAS*/
+  .nav__responsive-button {
+    position: sticky;              /*Posicionamos al ícono de barras*/
+    right: 0;                      /*Ponemos las barras a la derecha*/
+    font-size: 2em;                /*Elegimos el tamaño*/
+    padding: .3em .5em;            /*Lo separamos de las esquinas*/
+    width: 100%;
+    text-align: right;
+    background-color: #69c;
+  }
+
+  nav {
+    height: 3.5em;                 /*Le damos un alto*/
+    width: 100%;                   /*Le damos un ancho*/
+    background-color: #69c;      /*Color*/
+  }
+
+  .nav__responsive-ul {
+    display: block;                /*Los <li> aparecen uno debajo del otro*/
+    position: absolute;            /*Posicionamos el responsive ul*/
+    width: 100%;                   /*Le damos un ancho*/
+    height: 3.5em;                 /*Le damos el alto del nav*/
+  }
+
+  .nav__li-container {
+    position: relative;            /*Posicionamos*/
+    top: -1000px;                  /*Lo mandamos bien arriba*/
+    background-color: #7af;      /*Color*/
+    transition: all .2s;           /*Animacion*/
+  }
+
+  .nav__responsive-ul:hover > .nav__li-container{
+    top: 0;                        /*Cuando hagamos click la posicion top cambia a cero*/
+  }
+
+  .nav__responsive-li {
+    width: 100%;
+  }
+
+  .nav__responsive-li i {
+    margin: 1em;
+    color: #016;
+  }
+
+  .nav__responsive-li a {
+    color: #016;
+    text-decoration: none;
+  }
+
+  .nav__responsive-button-container {
+    position: absolute;
+    width: 100%;
+  }
+}

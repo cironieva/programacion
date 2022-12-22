@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+  <h1>Página con Express</h1>
+  <p>
+    <%= title %>
+  </p>
+
+
+  <% if (isActive) { %>
+    
+    <p>El servidor está activo</p>
+  
+  <% } else { %>
+    
+    <p>El servidor está inactivo</p>
+  
+  <% } %> 
+
+<%- include('partials/footer') %>

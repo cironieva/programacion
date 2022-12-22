@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <header>
+            <h1 id="title">Programmig Learning</h1>
+            <p id="description">Thank you for taking the time to see my project <3</p>
+        </header>
+        
+            
+        <form id="survey-form">
+            <div class="form-control">
+                <label for="name" id="label-name">Name</label>
+                <input type="text" id="name">
+            </div>
+                               
+            <fieldset name="select">
+                <label>How much do you know about programming?
+                    <select id="dropdown">
+                        <option value="0">Nothing</option>
+                        <option value="1">Courses</option>
+                        <option value="2">Study</option>
+                        <option value="3">Programer</option>
+                    </select>
+                </label>
+            </fieldset>
+                
+            <fieldset name="radio">
+                <label>Would you like to...?</label>
+                <label><input type="radio" name="learn" value="zero"> Learn from zero</label>
+                <label><input type="radio" name="learn" value="improve"> Improve</label>
+            </fieldset>
+                
+            <fieldset name="checkbox">
+                <label>What programmig area would you like to learn?
+                    <input type="checkbox" value="a"> Option 1
+                    <input type="checkbox" value="b"> Option 2
+                    <input type="checkbox" value="c"> Option 3
+                </label>
+                </fieldset>
+                
+            <fieldset name="textarea">
+                <label>Tell me your programmer dream:
+                    <textarea cols="30" rows="3"></textarea>
+                </label>
+            </fieldset>
+            
+            <input type="submit" value="Submit" id="submit" >
+        </form>        
+    </body>
+</html>

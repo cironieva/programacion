@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "colors": "^1.4.0",
+    "node-fetch": "^3.2.10"
+  },
+  "name": "nodejs-fazt",
+  "version": "1.0.0",
+  "description": "njs course",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app.js"
+  },
+  "author": "zerox",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
